@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.takeyuweb.sqlitecursorsample.app" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <provider
+                android:name="gudon.sample.personprovider.PersonProvider"
+                android:authorities="gudon.sample.personprovider.personprovider" />
+        <activity
+            android:name="com.takeyuweb.sqlitecursorsample.app.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.takeyuweb.sqlitecursorsample.app.AutoRequeryActivity"
+            android:label="@string/title_activity_auto_requery" >
+        </activity>
+        <activity
+            android:name="com.takeyuweb.sqlitecursorsample.app.AsyncSwapCursorActivity"
+            android:label="@string/title_activity_async_swap_cursor" >
+        </activity>
+    </application>
+
+</manifest>
